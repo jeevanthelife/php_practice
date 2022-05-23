@@ -1,2 +1,2 @@
 <?php
-    echo "This is Header file.";
+    echo "This is from Header file.";
