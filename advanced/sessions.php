@@ -13,7 +13,7 @@ session_start();    //start the session
     // echo "The username is " . $_SESSION["username"] . ".<br>";
     // echo "Your address is " . $_SESSION["address"] . ".";
     session_unset();
-    session_destroy();
+    session_destroy(); 
     ?>
 </body>
 </html>
