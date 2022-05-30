@@ -27,9 +27,20 @@
 }   */
 
 // echo factorial(3); //using dowhile loops
-// factorial(3);       //usinf for loop
+// factorial(3);       //using for loop
 //}
 
+
+// function factorial($n)    
+// {    
+//     if ($n < 0)    
+//         return "invalid number"; /*Wrong value*/    
+//     if ($n == 0)    
+//         return 1; /*Terminating condition*/    
+//     return ($n * factorial ($n -1));    
+// }    
+    
+// echo factorial(-2); 
 
 
 /* 
@@ -83,6 +94,34 @@ function table($n,$t){      //$n is for which number's table to generate and $t 
 table(8,20);
 */
 
-function x(){
 
-}
+// $num = 14597;
+// $sum = 0; $rem = 0;
+// // echo strlen($num)."<br>";
+
+// for ($i = 0; $i < strlen($num); $i++) {
+//     // echo $i."<br>";
+//     $rem = $num % 10;
+//     $sum = $sum + $rem;
+//     $num = $num/10;
+// }
+// echo $sum;
+
+// function adder(&$str2)  
+// {  
+//     $str2 .= 'Call By Value';  
+// }  
+// $str = 'Hello ';  
+// adder($str);  
+// echo $str;
+
+// function increment($i)  
+// {  
+//     $i++;  
+// }  
+// $i = 10;  
+// increment($i);  
+// echo $i;  
+
+
+  

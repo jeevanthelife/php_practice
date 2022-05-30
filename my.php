@@ -11,6 +11,9 @@
 
     <?php 
         /*
+        
+$msg = "hello";
+echo "$msg is from \"\$msg.\"";  //escaping characters. for printing characters like "" and $ from echo using \ 
         $x= 2.26;                       //making a variable; they are case sensitive
         $y= 4;
         $bikes = array("Yamaha","KTM","BMW");           //creating the array

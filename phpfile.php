@@ -8,20 +8,14 @@
 </head>
 <body>
     
-    Hello <?php echo $_POST["name"];?> !!<br>
-    <?php
-        $email_pattern= "/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix";
-        $email = $_GET["email"];
-        if (preg_match($email_pattern, $email) != 1){
-            echo "Your Email Address is NOT Valid";
-        }
-        
-        else {
-            echo "Your Email Address is: $email ";
-        }
-    ?>
-    <!-- Your Email Address is :  <?php echo $_POST["email"]; ?> -->
-
     
+    
+    
+<?php 
+//    $_SERVER["PHP_SELF"] this variable can be used by hackers. so to fix this exploit we have to use htmlspecialchars() function.
+
+
+
+?>    
 </body>
 </html>
