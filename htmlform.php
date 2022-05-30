@@ -78,6 +78,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 <p><span class="error">* required field</span></p>
+<!-- $_SERVER["PHP_SELF"] this variable can be used by hackers. so to fix this exploit we have to use htmlspecialchars() function. -->
+
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">  
   Full Name: <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
@@ -109,16 +111,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <input type="submit" name="submit" value="SUBMIT" />
 </form>
 
-    <!-- <form action="phpfile.php" method="post">
-      Full Name : <input type="text" name="name" /><br />
-      Email: <input type="text" name="email" /><br />
-      Contact Number: <input type="number" name="phone" /> <br />
-      Message: <textarea type="text" name="message"></textarea><br />
-      Gender: <input type="radio" name="gender" value="female" />Female
-      <input type="radio" name="gender" value="male" />Male<br />
-      <br /><br />
-      <input type="submit" name="submit" value="SUBMIT" />
-    </form> -->
     <?php
     if(isset($_POST['submit'])) {  
     if($nameErr == "" && $emailErr == "" && $phoneErr == "" && $genderErr == "") {
