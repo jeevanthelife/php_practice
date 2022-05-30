@@ -14,8 +14,6 @@
 <?php 
 //    $_SERVER["PHP_SELF"] this variable can be used by hackers. so to fix this exploit we have to use htmlspecialchars() function.
 
-
-
 ?>    
 </body>
 </html>
