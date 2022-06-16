@@ -10,7 +10,7 @@
     </style>
   </head>
   <body>
-
+<h2>User Feedback</h2>
 <?php
 $nameErr = $genderErr = $emailErr = $phoneErr = "";
 $name = $email = $gender = $message = $phone = "";
